@@ -150,7 +150,7 @@ export default function App() {
           <View style={styles.circuloDecorativo2} />
 
           <View style={styles.badgeTopoInicio}>
-            <Text style={styles.textoBadgeTopo}>✨ TECTOY • 101 DÁLMATAS</Text>
+            <Text style={styles.textoBadgeTopo}>101 DÁLMATAS</Text>
           </View>
 
           <Text style={styles.tituloHero}>Pense Bem!</Text>
@@ -200,7 +200,7 @@ export default function App() {
                   <View style={styles.infoProgramaNovo}>
                     <View style={styles.linhaMetaPrograma}>
                       <View style={[styles.pillCodigo, { backgroundColor: tema.cor }]}>
-                        <Text style={styles.textoPillCodigo}>PROG. {codigo}</Text>
+                        <Text style={styles.textoPillCodigo}>{codigo}</Text>
                       </View>
                       <Text style={styles.textoQtdQuestoes}>30 perguntas</Text>
                     </View>

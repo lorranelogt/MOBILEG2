@@ -34,9 +34,11 @@ export const IMAGENS_PAGINAS = {
 };
 
 export const PROGRAMAS = {
-  '131': {
-    titulo: 'Programa 1 • Os Dálmatas e Filhotes',
-    codigo: 'LIVRO 1 3 1 ENTER',
+  prog1: {
+    numero: 1,
+    etiqueta: 'MÓDULO 01',
+    titulo: 'Os Dálmatas e Filhotes',
+    descricao: 'Características, cuidados e filhotes recém-nascidos',
     questoes: [
       { num: 1, pagNum: 3, pag: 'Pág. 3', pergunta: 'O dálmata tem pêlo ... e branco, com pintas marrons ou negras.', opcoes: ['amarelo', 'curto', 'crespo', 'comprido'], correta: 1 },
       { num: 2, pagNum: 3, pag: 'Pág. 3', pergunta: 'Seu ... não é dos melhores, por isso ele não é considerado um cão de caça.', opcoes: ['apetite', 'faro', 'humor', 'latido'], correta: 1 },
@@ -57,23 +59,25 @@ export const PROGRAMAS = {
       { num: 17, pagNum: 5, pag: 'Pág. 5', pergunta: 'Quando o filhote tem cerca de 5 ..., aparecem os dentes de leite.', opcoes: ['semanas', 'meses', 'anos', 'dias'], correta: 0 },
       { num: 18, pagNum: 5, pag: 'Pág. 5', pergunta: 'Nesse momento, a mãe começa a ... os filhotes.', opcoes: ['lamber', 'desamarrar', 'desmamar', 'assustar'], correta: 2 },
       { num: 19, pagNum: 5, pag: 'Pág. 5', pergunta: 'Os cachorrinhos já podem comer ... e carne moída.', opcoes: ['sorvete', 'bala', 'papinha', 'batatas fritas'], correta: 2 },
-      { num: 20, pagNum: 6, pag: 'Pág. 6', pergunta: 'Manchas e pintas: Pêlo amarelo alaranjado com listras negras pontiagudas pertence a qual animal?', opcoes: ['G (Cão dálmata)', 'D (Tigre)', 'B (Cobra coral)', 'A (Zebra)'], correta: 1 },
-      { num: 21, pagNum: 6, pag: 'Pág. 6', pergunta: 'Manchas e pintas: Pêlo amarelo com rosetas pretas e centro avermelhado pertence a qual animal?', opcoes: ['B (Cobra coral)', 'F (Girafa)', 'C (Jacaré)', 'E (Onça pintada)'], correta: 3 },
-      { num: 22, pagNum: 6, pag: 'Pág. 6', pergunta: 'Manchas e pintas: Pelagem amarela com grandes manchas poligonais marrons/avermelhadas pertence a:', opcoes: ['F (Girafa)', 'B (Cobra coral)', 'C (Jacaré)', 'A (Zebra)'], correta: 0 },
-      { num: 23, pagNum: 6, pag: 'Pág. 6', pergunta: 'Manchas e pintas: Pêlo branco com listras pretas onduladas pertence a qual animal?', opcoes: ['D (Tigre)', 'A (Zebra)', 'G (Cão dálmata)', 'B (Cobra coral)'], correta: 1 },
-      { num: 24, pagNum: 6, pag: 'Pág. 6', pergunta: 'Manchas e pintas: Pêlo branco com pintas pretas arredondadas pertence a qual animal?', opcoes: ['G (Cão dálmata)', 'F (Girafa)', 'A (Zebra)', 'C (Jacaré)'], correta: 0 },
-      { num: 25, pagNum: 6, pag: 'Pág. 6', pergunta: 'Manchas e pintas: Pele verde com escamas retangulares e cristas pertence a qual animal?', opcoes: ['D (Tigre)', 'C (Jacaré)', 'F (Girafa)', 'E (Onça pintada)'], correta: 1 },
-      { num: 26, pagNum: 6, pag: 'Pág. 6', pergunta: 'Manchas e pintas: Escamas com anéis vermelhos, amarelos e pretos pertence a qual animal?', opcoes: ['D (Tigre)', 'A (Zebra)', 'C (Jacaré)', 'B (Cobra coral)'], correta: 3 },
-      { num: 27, pagNum: 7, pag: 'Pág. 7', pergunta: 'Labirinto: Qual filhote chega até as minhocas?', opcoes: ['Pássarinho Amarelo', 'Cachorro', 'Passarinho Azul', 'Sapo'], correta: 2 },
-      { num: 28, pagNum: 7, pag: 'Pág. 7', pergunta: 'Labirinto: Qual filhote vai roer um osso?', opcoes: ['Pássarinho Amarelo', 'Cachorro', 'Passarinho Azul', 'Sapo'], correta: 1 },
-      { num: 29, pagNum: 7, pag: 'Pág. 7', pergunta: 'Labirinto: Qual filhote vai comer farelo de milho?', opcoes: ['Pássarinho Amarelo', 'Cachorro', 'Passarinho Azul', 'Sapo'], correta: 0 },
-      { num: 30, pagNum: 7, pag: 'Pág. 7', pergunta: 'Labirinto: Qual filhote vai comer insetos?', opcoes: ['Pássarinho Amarelo', 'Cachorro', 'Passarinho Azul', 'Sapo'], correta: 3 },
+      { num: 20, pagNum: 6, pag: 'Pág. 6', pergunta: 'Manchas e pintas: Pêlo amarelo alaranjado com listras negras pontiagudas pertence a qual animal?', opcoes: ['Cão dálmata', 'Tigre', 'Cobra coral', 'Zebra'], correta: 1 },
+      { num: 21, pagNum: 6, pag: 'Pág. 6', pergunta: 'Manchas e pintas: Pêlo amarelo com rosetas pretas e centro avermelhado pertence a qual animal?', opcoes: ['Cobra coral', 'Girafa', 'Jacaré', 'Onça pintada'], correta: 3 },
+      { num: 22, pagNum: 6, pag: 'Pág. 6', pergunta: 'Manchas e pintas: Pelagem amarela com grandes manchas poligonais marrons/avermelhadas pertence a:', opcoes: ['Girafa', 'Cobra coral', 'Jacaré', 'Zebra'], correta: 0 },
+      { num: 23, pagNum: 6, pag: 'Pág. 6', pergunta: 'Manchas e pintas: Pêlo branco com listras pretas onduladas pertence a qual animal?', opcoes: ['Tigre', 'Zebra', 'Cão dálmata', 'Cobra coral'], correta: 1 },
+      { num: 24, pagNum: 6, pag: 'Pág. 6', pergunta: 'Manchas e pintas: Pêlo branco com pintas pretas arredondadas pertence a qual animal?', opcoes: ['Cão dálmata', 'Girafa', 'Zebra', 'Jacaré'], correta: 0 },
+      { num: 25, pagNum: 6, pag: 'Pág. 6', pergunta: 'Manchas e pintas: Pele verde com escamas retangulares e cristas pertence a qual animal?', opcoes: ['Tigre', 'Jacaré', 'Girafa', 'Onça pintada'], correta: 1 },
+      { num: 26, pagNum: 6, pag: 'Pág. 6', pergunta: 'Manchas e pintas: Escamas com anéis vermelhos, amarelos e pretos pertence a qual animal?', opcoes: ['Tigre', 'Zebra', 'Jacaré', 'Cobra coral'], correta: 3 },
+      { num: 27, pagNum: 7, pag: 'Pág. 7', pergunta: 'Labirinto: Qual filhote chega até as minhocas?', opcoes: ['Passarinho Amarelo', 'Cachorro', 'Passarinho Azul', 'Sapo'], correta: 2 },
+      { num: 28, pagNum: 7, pag: 'Pág. 7', pergunta: 'Labirinto: Qual filhote vai roer um osso?', opcoes: ['Passarinho Amarelo', 'Cachorro', 'Passarinho Azul', 'Sapo'], correta: 1 },
+      { num: 29, pagNum: 7, pag: 'Pág. 7', pergunta: 'Labirinto: Qual filhote vai comer farelo de milho?', opcoes: ['Passarinho Amarelo', 'Cachorro', 'Passarinho Azul', 'Sapo'], correta: 0 },
+      { num: 30, pagNum: 7, pag: 'Pág. 7', pergunta: 'Labirinto: Qual filhote vai comer insetos?', opcoes: ['Passarinho Amarelo', 'Cachorro', 'Passarinho Azul', 'Sapo'], correta: 3 },
     ],
   },
 
-  '132': {
-    titulo: 'Programa 2 • O Desenho e Vida de Cachorro',
-    codigo: 'LIVRO 1 3 2 ENTER',
+  prog2: {
+    numero: 2,
+    etiqueta: 'MÓDULO 02',
+    titulo: 'O Desenho e Vida de Cachorro',
+    descricao: 'Personagens do filme, objetos caninos e pastoreio',
     questoes: [
       { num: 31, pagNum: 9, pag: 'Pág. 9', pergunta: 'Esse desenho da Disney conta a história de uma família de ... dálmatas.', opcoes: ['sapos', 'gatos', 'cachorros', 'coelhos'], correta: 2 },
       { num: 32, pagNum: 9, pag: 'Pág. 9', pergunta: 'Os dálmatas são cães brancos com ... pretas ou marrons.', opcoes: ['listras', 'pintas', 'orelhas', 'caudas'], correta: 1 },
@@ -95,9 +99,9 @@ export const PROGRAMAS = {
       { num: 48, pagNum: 11, pag: 'Pág. 11', pergunta: 'Jóia é uma cadelinha graciosa e bem ...', opcoes: ['comportada', 'gordinha', 'suja', 'gulosa'], correta: 0 },
       { num: 49, pagNum: 11, pag: 'Pág. 11', pergunta: 'Jasper e Horácio ... os cachorrinhos.', opcoes: ['raptam', 'rapam', 'roncam', 'regam'], correta: 0 },
       { num: 50, pagNum: 11, pag: 'Pág. 11', pergunta: 'Cruela usa uma ... comprida.', opcoes: ['chaleira', 'piteira', 'bengala', 'piscina'], correta: 1 },
-      { num: 51, pagNum: 12, pag: 'Pág. 12', pergunta: 'Qual objeto faz parte do dia-a-dia de um cãozinho? (Linha 51)', opcoes: ['Tigela de ração (Pongo)', 'Garfo e colher', 'Xícara florida', 'Lanterna'], correta: 0 },
+      { num: 51, pagNum: 12, pag: 'Pág. 12', pergunta: 'Qual objeto faz parte do dia-a-dia de um cãozinho? (Linha 51)', opcoes: ['Tigela de ração', 'Garfo e colher', 'Xícara florida', 'Lanterna'], correta: 0 },
       { num: 52, pagNum: 12, pag: 'Pág. 12', pergunta: 'Qual objeto faz parte do dia-a-dia de um cãozinho? (Linha 52)', opcoes: ['Ninho de passarinho', 'Berço de bebê', 'Carrinho de brinquedo', 'Caminha com almofada'], correta: 3 },
-      { num: 53, pagNum: 12, pag: 'Pág. 12', pergunta: 'Qual objeto faz parte do dia-a-dia de um cãozinho? (Linha 53)', opcoes: ['Bolo de aniversário', 'Osso', 'Sorvete de casquinha', 'Sapato social'], correta: 1 },
+      { num: 53, pagNum: 12, pag: 'Pág. 12', pergunta: 'Qual objeto faz parte do dia-a-dia de um cãozinho? (Linha 53)', opcoes: ['Bolo de aniversário', 'Osso', 'Sorvete de casquinha', 'Sapato'], correta: 1 },
       { num: 54, pagNum: 12, pag: 'Pág. 12', pergunta: 'Qual objeto faz parte do dia-a-dia de um cãozinho? (Linha 54)', opcoes: ['Violão', 'Coleira', 'Relógio de pulso', 'Regador'], correta: 1 },
       { num: 55, pagNum: 12, pag: 'Pág. 12', pergunta: 'Qual objeto faz parte do dia-a-dia de um cãozinho? (Linha 55)', opcoes: ['Serrote', 'Bacia de banho e escova', 'Vaso de flores', 'Camiseta'], correta: 1 },
       { num: 56, pagNum: 12, pag: 'Pág. 12', pergunta: 'Qual objeto faz parte do dia-a-dia de um cãozinho? (Linha 56)', opcoes: ['Bota', 'Barco a vela', 'Casinha de cachorro', 'Lua crescente'], correta: 2 },
@@ -108,9 +112,11 @@ export const PROGRAMAS = {
     ],
   },
 
-  '133': {
-    titulo: 'Programa 3 • Nosso Amigo, o Cão',
-    codigo: 'LIVRO 1 3 3 ENTER',
+  prog3: {
+    numero: 3,
+    etiqueta: 'MÓDULO 03',
+    titulo: 'Nosso Amigo, o Cão',
+    descricao: 'Sentidos, linguagem corporal, história e raças',
     questoes: [
       { num: 61, pagNum: 15, pag: 'Pág. 15', pergunta: 'Assim como o homem, o cão também é um ...', opcoes: ['inseto', 'anfíbio', 'réptil', 'mamífero'], correta: 3 },
       { num: 62, pagNum: 15, pag: 'Pág. 15', pergunta: 'Só que o homem é bípede e o cão é ...', opcoes: ['vegetal', 'quadrúpede', 'mineral', 'herbívoro'], correta: 1 },
@@ -118,12 +124,12 @@ export const PROGRAMAS = {
       { num: 64, pagNum: 15, pag: 'Pág. 15', pergunta: 'Além disso, os cinco ... do cão se desenvolvem de maneira diferente que os do homem.', opcoes: ['sentidos', 'olhos', 'cores', 'ouvidos'], correta: 0 },
       { num: 65, pagNum: 15, pag: 'Pág. 15', pergunta: 'O cão escuta ... que o ouvido humano não é capaz de perceber.', opcoes: ['farol', 'sons', 'figuras', 'comidas'], correta: 1 },
       { num: 66, pagNum: 15, pag: 'Pág. 15', pergunta: 'Seu ... também é muito mais aguçado: ele sente cheiros que nós não sentimos.', opcoes: ['frango', 'faro', 'pêlos', 'fino'], correta: 1 },
-      { num: 67, pagNum: 16, pag: 'Pág. 16', pergunta: 'Linguagem corporal (Quadro 67): Cão parado em pé, corpo ereto, orelhas levantadas e olhar fixo:', opcoes: ['B - Quer brincar comigo?', 'F - Medroso, tímido', 'C - Atento', 'A - Agressivo, bravo'], correta: 2 },
-      { num: 68, pagNum: 16, pag: 'Pág. 16', pergunta: 'Linguagem corporal (Quadro 68): Cão com expressão alegre, pata levantada e abanando o rabo:', opcoes: ['E - Amigável', 'D - Relaxado, à vontade', 'A - Agressivo, bravo', 'C - Atento'], correta: 0 },
-      { num: 69, pagNum: 16, pag: 'Pág. 16', pergunta: 'Linguagem corporal (Quadro 69): Cão com pelos arrepiados, orelhas para trás e mostrando os dentes:', opcoes: ['A - Agressivo, bravo', 'F - Medroso, tímido', 'E - Amigável', 'D - Relaxado, à vontade'], correta: 0 },
-      { num: 70, pagNum: 16, pag: 'Pág. 16', pergunta: 'Linguagem corporal (Quadro 70): Cão encolhido, cabeça baixa e rabo entre as pernas:', opcoes: ['E - Amigável', 'F - Medroso, tímido', 'A - Agressivo, bravo', 'B - Quer brincar comigo?'], correta: 1 },
-      { num: 71, pagNum: 16, pag: 'Pág. 16', pergunta: 'Linguagem corporal (Quadro 71): Cão agachado com as patas dianteiras esticadas e rabo abanando:', opcoes: ['B - Quer brincar comigo?', 'F - Medroso, tímido', 'C - Atento', 'D - Relaxado, à vontade'], correta: 0 },
-      { num: 72, pagNum: 16, pag: 'Pág. 16', pergunta: 'Linguagem corporal (Quadro 72): Cão deitado de barriga para cima, patas soltas e olhos tranquilos:', opcoes: ['A - Agressivo, bravo', 'B - Quer brincar comigo?', 'C - Atento', 'D - Relaxado, à vontade'], correta: 3 },
+      { num: 67, pagNum: 16, pag: 'Pág. 16', pergunta: 'Linguagem corporal (Quadro 67): Cão parado em pé, corpo ereto, orelhas levantadas e olhar fixo:', opcoes: ['Quer brincar comigo?', 'Medroso, tímido', 'Atento', 'Agressivo, bravo'], correta: 2 },
+      { num: 68, pagNum: 16, pag: 'Pág. 16', pergunta: 'Linguagem corporal (Quadro 68): Cão com expressão alegre, pata levantada e abanando o rabo:', opcoes: ['Amigável', 'Relaxado, à vontade', 'Agressivo, bravo', 'Atento'], correta: 0 },
+      { num: 69, pagNum: 16, pag: 'Pág. 16', pergunta: 'Linguagem corporal (Quadro 69): Cão com pelos arrepiados, orelhas para trás e mostrando os dentes:', opcoes: ['Agressivo, bravo', 'Medroso, tímido', 'Amigável', 'Relaxado, à vontade'], correta: 0 },
+      { num: 70, pagNum: 16, pag: 'Pág. 16', pergunta: 'Linguagem corporal (Quadro 70): Cão encolhido, cabeça baixa e rabo entre as pernas:', opcoes: ['Amigável', 'Medroso, tímido', 'Agressivo, bravo', 'Quer brincar comigo?'], correta: 1 },
+      { num: 71, pagNum: 16, pag: 'Pág. 16', pergunta: 'Linguagem corporal (Quadro 71): Cão agachado com as patas dianteiras esticadas e rabo abanando:', opcoes: ['Quer brincar comigo?', 'Medroso, tímido', 'Atento', 'Relaxado, à vontade'], correta: 0 },
+      { num: 72, pagNum: 16, pag: 'Pág. 16', pergunta: 'Linguagem corporal (Quadro 72): Cão deitado de barriga para cima, patas soltas e olhos tranquilos:', opcoes: ['Agressivo, bravo', 'Quer brincar comigo?', 'Atento', 'Relaxado, à vontade'], correta: 3 },
       { num: 73, pagNum: 17, pag: 'Pág. 17', pergunta: 'Estes desenhos encontrados em cavernas mostram cães ajudando o homem pré-histórico a ...', opcoes: ['coçar', 'caçar', 'navegar', 'nadar'], correta: 1 },
       { num: 74, pagNum: 17, pag: 'Pág. 17', pergunta: 'Nesta escultura da Babilônia, vemos um cachorro ... treinado para combater.', opcoes: ['pequeno e peludo', 'grande e feroz', 'fraco e mansinho', 'de orelhas em pé'], correta: 1 },
       { num: 75, pagNum: 17, pag: 'Pág. 17', pergunta: 'Os egípcios conheciam várias raças de cães. Eles tinham até um deus ... chamado Anúbis.', opcoes: ['tigre', 'cachorro', 'peixe', 'cavalo'], correta: 1 },
@@ -145,9 +151,11 @@ export const PROGRAMAS = {
     ],
   },
 
-  '134': {
-    titulo: 'Programa 4 • A Família dos Cães',
-    codigo: 'LIVRO 1 3 4 ENTER',
+  prog4: {
+    numero: 4,
+    etiqueta: 'MÓDULO 04',
+    titulo: 'A Família dos Cães',
+    descricao: 'Animais domésticos, canídeos selvagens e comportamentos',
     questoes: [
       { num: 91, pagNum: 21, pag: 'Pág. 21', pergunta: 'Os mamíferos são animais que ... seus filhotes.', opcoes: ['comem', 'abandonam', 'desenham', 'amamentam'], correta: 3 },
       { num: 92, pagNum: 21, pag: 'Pág. 21', pergunta: 'Antes de ser domesticado pelo homem, o cão era um animal ...', opcoes: ['voador', 'selvagem', 'ensinado', 'aquático'], correta: 1 },
@@ -175,16 +183,18 @@ export const PROGRAMAS = {
       { num: 114, pagNum: 24, pag: 'Pág. 24', pergunta: 'Quadrinho 114: Os cães também sabem ...', opcoes: ['nadar', 'voar', 'ler', 'pintar'], correta: 0 },
       { num: 115, pagNum: 24, pag: 'Pág. 24', pergunta: 'Quadrinho 115: Este cão cava um buraco para esconder seu ...', opcoes: ['osso', 'rabo', 'apito', 'filhote'], correta: 0 },
       { num: 116, pagNum: 24, pag: 'Pág. 24', pergunta: 'Quadrinho 116: Este filhote está tomando ... na mamadeira.', opcoes: ['suco', 'refrigerante', 'leite', 'chocolate'], correta: 2 },
-      { num: 117, pagNum: 25, pag: 'Pág. 25', pergunta: 'Comparação (A: Whippet, B: Bassê hound, C: Maltês, D: Dálmata): Qual é o mais alto?', opcoes: ['D (Dálmata)', 'C (Maltês)', 'B (Bassê hound)', 'A (Whippet)'], correta: 3 },
-      { num: 118, pagNum: 25, pag: 'Pág. 25', pergunta: 'Comparação (A: Whippet, B: Bassê hound, C: Maltês, D: Dálmata): Qual o mais peludo?', opcoes: ['B (Bassê hound)', 'D (Dálmata)', 'C (Maltês)', 'A (Whippet)'], correta: 2 },
-      { num: 119, pagNum: 25, pag: 'Pág. 25', pergunta: 'Comparação (A: Whippet, B: Bassê hound, C: Maltês, D: Dálmata): Qual tem orelhas maiores?', opcoes: ['C (Maltês)', 'B (Bassê hound)', 'A (Whippet)', 'D (Dálmata)'], correta: 1 },
-      { num: 120, pagNum: 25, pag: 'Pág. 25', pergunta: 'Comparação (A: Whippet, B: Bassê hound, C: Maltês, D: Dálmata): Qual tem mais pintas e manchas?', opcoes: ['A (Whippet)', 'B (Bassê hound)', 'C (Maltês)', 'D (Dálmata)'], correta: 3 },
+      { num: 117, pagNum: 25, pag: 'Pág. 25', pergunta: 'Comparação (Whippet, Bassê hound, Maltês, Dálmata): Qual é o mais alto?', opcoes: ['Dálmata', 'Maltês', 'Bassê hound', 'Whippet'], correta: 3 },
+      { num: 118, pagNum: 25, pag: 'Pág. 25', pergunta: 'Comparação (Whippet, Bassê hound, Maltês, Dálmata): Qual o mais peludo?', opcoes: ['Bassê hound', 'Dálmata', 'Maltês', 'Whippet'], correta: 2 },
+      { num: 119, pagNum: 25, pag: 'Pág. 25', pergunta: 'Comparação (Whippet, Bassê hound, Maltês, Dálmata): Qual tem orelhas maiores?', opcoes: ['Maltês', 'Bassê hound', 'Whippet', 'Dálmata'], correta: 1 },
+      { num: 120, pagNum: 25, pag: 'Pág. 25', pergunta: 'Comparação (Whippet, Bassê hound, Maltês, Dálmata): Qual tem mais pintas e manchas?', opcoes: ['Whippet', 'Bassê hound', 'Maltês', 'Dálmata'], correta: 3 },
     ],
   },
 
-  '135': {
-    titulo: 'Programa 5 • Cães Trabalhadores e Famosos',
-    codigo: 'LIVRO 1 3 5 ENTER',
+  prog5: {
+    numero: 5,
+    etiqueta: 'MÓDULO 05',
+    titulo: 'Cães Trabalhadores e Famosos',
+    descricao: 'Resgates, astros do cinema, recordes e quebra-cabeça',
     questoes: [
       { num: 121, pagNum: 27, pag: 'Pág. 27', pergunta: 'Alguns cães são capazes de encontrar uma pessoa ainda viva sob muitos metros de ...', opcoes: ['grama', 'tecido', 'algodão', 'neve'], correta: 3 },
       { num: 122, pagNum: 27, pag: 'Pág. 27', pergunta: 'Eles também procuram pessoas soterradas por ...', opcoes: ['ventos', 'terremotos', 'mares', 'lagos'], correta: 1 },

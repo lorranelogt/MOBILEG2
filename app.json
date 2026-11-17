@@ -1,13 +1,17 @@
 {
   "expo": {
     "name": "pense-bem-app",
-    "slug": "pense-bem-app",
+    "slug": "mobilejp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lorrane.goulart.pensebemapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -15,10 +19,17 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "package": "com.lorrane.goulart.pensebemapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "895d09f9-241c-4e74-af95-dadad46cc0de"
+      }
+    },
+    "owner": "lorranegoularts-team"
   }
 }
